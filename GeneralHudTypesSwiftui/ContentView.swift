@@ -7,13 +7,33 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Spacer()
+            Button("Toast"){
+                SharedHud.shared.ErrorHud(message: "Error Message")
+            }.padding()
+            
+            Button("Padder"){
+                SharedHud.shared.SuccessHud(message: "Suucess")
+            }.padding()
+            
+            Button("Modal"){
+                SharedHud.shared.ModalHud()
+            }.padding()
+            
+            Button("Sheet"){
+                SharedHud.shared.SheetHud()
+            }.padding()
+            
+            Spacer()
         }
         .padding()
     }

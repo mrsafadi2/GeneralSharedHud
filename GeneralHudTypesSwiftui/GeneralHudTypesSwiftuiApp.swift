@@ -12,6 +12,7 @@ struct GeneralHudTypesSwiftuiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .overlayHud()
         }
     }
 }

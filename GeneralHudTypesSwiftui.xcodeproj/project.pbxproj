@@ -14,6 +14,13 @@
 		C89C22222952CFD100B85628 /* GeneralHudTypesSwiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C22212952CFD100B85628 /* GeneralHudTypesSwiftuiTests.swift */; };
 		C89C222C2952CFD100B85628 /* GeneralHudTypesSwiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C222B2952CFD100B85628 /* GeneralHudTypesSwiftuiUITests.swift */; };
 		C89C222E2952CFD100B85628 /* GeneralHudTypesSwiftuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C222D2952CFD100B85628 /* GeneralHudTypesSwiftuiUITestsLaunchTests.swift */; };
+		C89C223C2952D04600B85628 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = C89C223B2952D04600B85628 /* PopupView */; };
+		C89C22402952D0B600B85628 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C223E2952D0B600B85628 /* SuccessView.swift */; };
+		C89C22412952D0B600B85628 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C223F2952D0B600B85628 /* ErrorView.swift */; };
+		C89C22432952D30600B85628 /* SharedHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C22422952D30600B85628 /* SharedHud.swift */; };
+		C89C22462952D46F00B85628 /* OverlayHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C22452952D46F00B85628 /* OverlayHud.swift */; };
+		C89C22482952F13C00B85628 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C22472952F13C00B85628 /* SheetView.swift */; };
+		C89C224A2952F8DA00B85628 /* PopoupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C22492952F8DA00B85628 /* PopoupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		C89C22272952CFD100B85628 /* GeneralHudTypesSwiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralHudTypesSwiftuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89C222B2952CFD100B85628 /* GeneralHudTypesSwiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHudTypesSwiftuiUITests.swift; sourceTree = "<group>"; };
 		C89C222D2952CFD100B85628 /* GeneralHudTypesSwiftuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHudTypesSwiftuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C89C223E2952D0B600B85628 /* SuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		C89C223F2952D0B600B85628 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C89C22422952D30600B85628 /* SharedHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedHud.swift; sourceTree = "<group>"; };
+		C89C22452952D46F00B85628 /* OverlayHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayHud.swift; sourceTree = "<group>"; };
+		C89C22472952F13C00B85628 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		C89C22492952F8DA00B85628 /* PopoupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89C223C2952D04600B85628 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +109,10 @@
 		C89C220E2952CFD000B85628 /* GeneralHudTypesSwiftui */ = {
 			isa = PBXGroup;
 			children = (
+				C89C22442952D46200B85628 /* Modifires */,
+				C89C223D2952D05000B85628 /* ViewsTypes */,
 				C89C220F2952CFD000B85628 /* GeneralHudTypesSwiftuiApp.swift */,
+				C89C22422952D30600B85628 /* SharedHud.swift */,
 				C89C22112952CFD000B85628 /* ContentView.swift */,
 				C89C22132952CFD000B85628 /* Assets.xcassets */,
 				C89C22152952CFD000B85628 /* GeneralHudTypesSwiftui.entitlements */,
@@ -129,6 +146,25 @@
 			path = GeneralHudTypesSwiftuiUITests;
 			sourceTree = "<group>";
 		};
+		C89C223D2952D05000B85628 /* ViewsTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C89C223F2952D0B600B85628 /* ErrorView.swift */,
+				C89C223E2952D0B600B85628 /* SuccessView.swift */,
+				C89C22472952F13C00B85628 /* SheetView.swift */,
+				C89C22492952F8DA00B85628 /* PopoupView.swift */,
+			);
+			path = ViewsTypes;
+			sourceTree = "<group>";
+		};
+		C89C22442952D46200B85628 /* Modifires */ = {
+			isa = PBXGroup;
+			children = (
+				C89C22452952D46F00B85628 /* OverlayHud.swift */,
+			);
+			path = Modifires;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +181,9 @@
 			dependencies = (
 			);
 			name = GeneralHudTypesSwiftui;
+			packageProductDependencies = (
+				C89C223B2952D04600B85628 /* PopupView */,
+			);
 			productName = GeneralHudTypesSwiftui;
 			productReference = C89C220C2952CFD000B85628 /* GeneralHudTypesSwiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +256,9 @@
 				Base,
 			);
 			mainGroup = C89C22032952CFD000B85628;
+			packageReferences = (
+				C89C223A2952D04600B85628 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = C89C220D2952CFD000B85628 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89C22432952D30600B85628 /* SharedHud.swift in Sources */,
+				C89C224A2952F8DA00B85628 /* PopoupView.swift in Sources */,
+				C89C22482952F13C00B85628 /* SheetView.swift in Sources */,
 				C89C22122952CFD000B85628 /* ContentView.swift in Sources */,
+				C89C22462952D46F00B85628 /* OverlayHud.swift in Sources */,
+				C89C22402952D0B600B85628 /* SuccessView.swift in Sources */,
 				C89C22102952CFD000B85628 /* GeneralHudTypesSwiftuiApp.swift in Sources */,
+				C89C22412952D0B600B85628 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C89C223A2952D04600B85628 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C89C223B2952D04600B85628 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89C223A2952D04600B85628 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C89C22042952CFD000B85628 /* Project object */;
 }
